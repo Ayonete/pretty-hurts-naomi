@@ -138,13 +138,13 @@ loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', fun
   ];
   
 
-    window.touchpoints.forEach(point => {
+ window.touchpoints.forEach(point => {
         const div = document.createElement('div');
         div.className = 'touchpoint';
         div.style.position = 'absolute';
         div.style.width = '20px';
         div.style.height = '20px';
-        div.style.backgroundImage = 'url("https://mxmadu.github.io/pretty-hurts/img/touchpoint.png")';
+        div.style.backgroundImage = 'url("../img/touchpoint.png")';
         div.style.backgroundSize = 'cover';
         div.style.backgroundColor = 'transparent';
         div.style.cursor = 'pointer';
