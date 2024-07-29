@@ -228,7 +228,7 @@ closeImage.style.cursor = 'pointer';
 closeImage.style.display = 'none';
 document.body.appendChild(closeImage);
 
-const clickToleranceRadius = 20; // Adjust as needed
+const clickToleranceRadius = 20; 
 function showInfoBox(event, point) {
   const headerText = point.header;
   const contentText = point.text;
