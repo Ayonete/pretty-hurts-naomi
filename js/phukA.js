@@ -38,9 +38,9 @@ const loadingManager = new THREE.LoadingManager();
   progressBarContainer.style.display = 'none';
   }
 
-  loadingManager.onError = function(url){
-    console.error(`Got a problem loading: ${url}`);
-    }
+  // loadingManager.onError = function(url){
+  //   console.error(`Got a problem loading: ${url}`);
+  //   }
 	
 // }
 
