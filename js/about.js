@@ -79,8 +79,8 @@ scene.add(hLight);
 const loaderA = new GLTFLoader();
 
 loaderA.load( '../models/PHUK_PHACE_A.glb', function ( gltf ) {
-  gltf.scene.rotation.set(0, Math.PI, 0); // Rotate the model to show the front face
-  gltf.scene.position.set(2, 3, 0); // Move the model down along the Y axis
+  gltf.scene.rotation.set(0, Math.PI, 0); 
+  gltf.scene.position.set(2, 3, 0); 
   loaderA.receiveShadow = true;
 
 	scene.add( gltf.scene );
@@ -95,7 +95,7 @@ const loaderD = new GLTFLoader();
 
 loaderD.load( '../models/PHUK_PHACE_D.glb', function ( gltf ) {
   gltf.scene.rotation.set(0, Math.PI, 0);
-  gltf.scene.position.set(0, 0, 0); // Move the model down along the Y axis
+  gltf.scene.position.set(0, 0, 0); 
  
   loaderD.receiveShadow = true;
 
@@ -112,8 +112,8 @@ const loaderS = new GLTFLoader();
 
 
 loaderS.load( '../models/PHUK_PHACE_S.glb', function ( gltf ) {
-    gltf.scene.rotation.set(0, Math.PI, 0); // Rotate the model to show the front face
-    gltf.scene.position.set(-2, 3, 0); // Move the model down along the Y axis
+    gltf.scene.rotation.set(0, Math.PI, 0); 
+    gltf.scene.position.set(-2, 3, 0); 
     loaderS.receiveShadow = true;
   
       scene.add( gltf.scene );
