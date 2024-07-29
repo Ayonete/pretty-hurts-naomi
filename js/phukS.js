@@ -196,9 +196,7 @@ infoBox.style.padding = '10px';
 infoBox.style.border = '1px solid #5EFF12';
 infoBox.style.display = 'none';
 infoBox.style.zIndex = '1001';
-infoBox.style.overflowY = 'auto'; // Make content scrollable
-// infoBox.style.maxHeight = '50vh'; // Limit the height to 50% of the viewport height
-// infoBox.style.maxWidth = '50vw'; // Limit the width to 80% of the viewport width
+infoBox.style.overflowY = 'auto'; 
 document.body.appendChild(infoBox);
 
 
@@ -219,7 +217,7 @@ closeImage.style.cursor = 'pointer';
 closeImage.style.display = 'none';
 document.body.appendChild(closeImage);
 
-const clickToleranceRadius = 20; // Adjust as needed
+const clickToleranceRadius = 20; 
 function showInfoBox(event, point) {
   const headerText = point.header;
   const contentText = point.text;
@@ -329,7 +327,6 @@ function handleClick(event) {
             const dy = event.clientY - elementY;
 
             if (Math.sqrt(dx * dx + dy * dy) <= clickToleranceRadius) {
-                // playClickAudio(); // Uncomment if you have a click audio function
                 showInfoBox(event, touchpoint);
             }
         });
