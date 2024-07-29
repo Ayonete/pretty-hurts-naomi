@@ -45,7 +45,7 @@ const loadingManager = new THREE.LoadingManager();
 // }
 
 const hdrLoader = new RGBELoader(loadingManager);
-hdrLoader.load('../img/studio.hdr', function(texture) {
+hdrLoader.load('https://mxmadu.github.io/pretty-hurts/img/studio.hdr', function(texture) {
     const envMap = pmremGenerator.fromEquirectangular(texture).texture;
     scene.background = envMap;
     scene.environment = envMap;
