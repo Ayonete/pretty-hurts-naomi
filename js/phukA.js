@@ -68,6 +68,9 @@ loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', fun
   model.rotation.set(0, Math.PI, 0);
   model.receiveShadow = true;
   scene.add(model);
+}, undefined, function(error) {
+  console.error('Error loading GLB model:', error)
+});
 
     // Define touchpoints array
     window.touchpoints = [
