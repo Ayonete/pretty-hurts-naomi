@@ -63,7 +63,7 @@ scene.add(dLight);
 
 const loader = new GLTFLoader(loadingManager);
 let model;
-loader.load('https://threejs.org/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb', function(gltf) {
+loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', function(gltf) {
 	 console.log('Model loaded successfully:', gltf);
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
@@ -224,7 +224,7 @@ line.style.display = 'none';
 document.body.appendChild(line);
 
 const closeImage = new Image();
-closeImage.src = '../img/close.png';
+closeImage.src = 'https://mxmadu.github.io/pretty-hurts/img/close.png';
 closeImage.style.position = 'absolute';
 closeImage.style.width = '25px';
 closeImage.style.height = '25px';
