@@ -63,7 +63,7 @@ scene.add(dLight);
 
 const loader = new GLTFLoader(loadingManager);
 let model;
-loader.load('https://cors-anywhere.herokuapp.com/https://github.com/mxmadu/pretty-hurts/releases/download/untagged-31a0411e97bafbfb3bba/PHUK_PHACE_A.glb',
+loader.load('https://github.com/mxmadu/pretty-hurts/releases/download/models/PHUK_PHACE_A.glb',
  function(gltf) {
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
