@@ -63,7 +63,7 @@ scene.add(dLight);
 
 const loader = new GLTFLoader(loadingManager);
 let model;
-loader.load('  'https://threejs.org/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb', function(gltf) {
+loader.load('https://threejs.org/examples/models/gltf/LeePerrySmith/LeePerrySmith.glb', function(gltf) {
 	 console.log('Model loaded successfully:', gltf);
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
