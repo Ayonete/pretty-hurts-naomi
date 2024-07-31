@@ -63,7 +63,7 @@ scene.add(dLight);
 
 const loader = new GLTFLoader(loadingManager);
 let model;
-loader.load('https://www.dropbox.com/s/dy16levm3ae5n2qj8ci68/PHUK_PHACE_A.glb?dl=1', function(gltf) {
+loader.load('https://github.com/mxmadu/pretty-hurts/releases/download/untagged-31a0411e97bafbfb3bba/PHUK_PHACE_A.glb', function(gltf) {
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
   model.receiveShadow = true;
