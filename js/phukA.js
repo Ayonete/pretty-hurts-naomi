@@ -63,7 +63,7 @@ scene.add(dLight);
 
 const loader = new GLTFLoader(loadingManager);
 let model;
-loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', function(gltf) {
+loader.load('https://storage.googleapis.com/phuk-phace-models/PHUK_PHACE_A.glb', function(gltf) {
 	 console.log('Model loaded successfully:', gltf);
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
