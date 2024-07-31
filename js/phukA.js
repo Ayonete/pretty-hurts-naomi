@@ -64,10 +64,12 @@ scene.add(dLight);
 const loader = new GLTFLoader(loadingManager);
 let model;
 loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', function(gltf) {
+	 console.log('Model loaded successfully:', gltf);
   model = gltf.scene;
   model.rotation.set(0, Math.PI, 0);
   model.receiveShadow = true;
   scene.add(model);
+	    console.log('Model added to scene:', model);
 
     // Define touchpoints array
     window.touchpoints = [
@@ -153,11 +155,13 @@ loader.load('https://mxmadu.github.io/pretty-hurts/models/PHUK_PHACE_A.glb', fun
         point.element = div;
     });
 
-    console.log('Touchpoints added:', window.touchpoints);
+    console.log('Touchpoints added to DOM:', window.touchpoints);
 
-}, undefined, function(error) {
-    console.error(error);
-});
+},
+  undefined, // onProgress callback (optional)
+  function (error) {
+    console.error('An error occurred while loading the model:', error);
+  });
 
 
 
